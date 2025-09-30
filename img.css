@@ -1,0 +1,189 @@
+* {
+    padding: 0%;
+    margin: 0%; 
+    font-family: Montserrat;
+    font-size: small;
+}
+
+img {
+    max-height: 600px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.icono_empresa {
+    max-height: 10vh;
+    filter: brightness(100%) saturate(1.2);
+}
+
+li {
+    font-weight: 500;
+}
+
+.navbar {
+    position: absolute;
+    top: 35px; 
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.carousel {
+    position: relative;
+}
+
+.circular-image {
+    opacity: 80%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.divider-line {
+    width: 50px;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.divider-line:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.content-section {
+    background-image: url("/img/img_ref_tubos.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.content-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+}
+
+.content-section .container {
+    position: relative;
+    z-index: 3;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #ffc107;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1) sepia(1) saturate(10000%) hue-rotate(30deg);
+}
+
+.content-section .col-md-4 {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content-section .col-md-4:nth-child(3n) {
+    border-right: none;
+}
+
+.content-section .row:last-child .col-md-4 {
+    border-bottom: none;
+}
+
+.content-block {
+    background-color: #f8f9fa;
+}
+
+.divider-line {
+    width: 50px;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.divider-line:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+[class*="feature-block-"] {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    min-height: 450px;
+}
+
+[class*="feature-block-"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+}
+
+[class*="feature-block-"] > * {
+    position: relative;
+    z-index: 3;
+}
+
+.feature-block-1 {
+    background-image: url("/img/img_ref_cadenas.webp");
+}
+
+.feature-block-2 {
+    background-image: url("/img/img_ref_fierros.webp");
+}
+
+.feature-block-3 {
+    background-image: url("/img/img_ref_tubos.webp");
+}
+
+.icon img {
+    width: 50px;
+    height: auto;
+    filter: brightness(0) invert(1) sepia(1) saturate(10000%) hue-rotate(30deg);
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo-Mendoza</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="img.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animations_carrousel.css">
+    <!--ICONO DE VENTANA-->
+    <link rel="icon" sizes="64x64" href="/img/icono_web_empresa.jpg">         <!-- HTML5-es para compatibilidad con navegador con el webicon -->
+</head>
+<!--Etiquetas por añadir: Main, footer, nav,section, y comentarios adicionales.Jiji-->
+<body>
+<div class="container-fluid bg-light" style="text-align: center;">
+  <div class="row">   
+    <div class="col-2 border border-secondary-subtle border-start-0">
+      <a href="tel:934 943 605" class="text-decoration-none text-dark"><i class="bi bi-telephone"></i> 934 943 605</a>
+    </div>
+    <div class="col-3 border border-secondary-subtle">
+      <a href="mailto:ventas@zincpowerperu.com" class="text-decoration-none text-dark"><i class="bi bi-envelope"></i> ventas@zincpowerperu.com</a>
+    </div>
+    <div class="col-4 border border-secondary-subtle"></div>
+    <div class="col-3 border border-secondary-subtle border-end-0">
+      <a href="https://www.facebook.com/grupomendoza6?locale=es_LA" target="_blank" class="text-decoration-none text-dark">
+      <i class="bi bi-facebook mx-2"></i>
+      </a>
+      <a href="https://www.instagram.com/pernosimportados/" target="_blank" class="text-decoration-none text-dark">
+      <i class="bi bi-instagram mx-2"></i>
+      </a>
+      <a href="" class="text-decoration-none text-dark">
+      <i class="bi bi-google mx-2"></i>
+      </a>
+      <a href="" class="text-decoration-none text-dark">
+      <i class="bi bi-whatsapp mx-2"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-md bg-transparent">
+  <div class="container-fluid">
+    <a href="#">
+      <img src="/img/icono_empresa.gif" alt="" class="icono_empresa ms-4">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link text-light active nav-option mx-5" aria-current="page" href="#">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light nav-option mx-5" href="#nosotros">NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light nav-option mx-5" href="#">NUESTROS SERVICIOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light nav-option mx-5" aria-disabled="false" href="#">EMPRESAS DEL GRUPO</a>
+        </li>
+        <li>
+            <a class="nav-link text-light nav-option mx-5" href="#">CONTÁCTANOS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/img/img_ref_cadenas.webp" class="d-block w-100 carrusel_image" alt="Cadenas">
+      <div class="d-none" data-title="Cadenas Fuertes" data-description="Sistemas de seguridad y tracción para grandes pesos."></div>
+    </div>
+    <div class="carousel-item">
+      <img src="/img/img_ref_fierros.webp" class="d-block w-100 carrusel_image" alt="Fierros">
+      <div class="d-none" data-title="Estructuras de Fierro" data-description="Diseño y construcción para proyectos industriales."></div>
+    </div>
+    <div class="carousel-item">
+      <img src="/img/img_ref_tubos.webp" class="d-block w-100 carrusel_image" alt="Tubos">
+      <div class="d-none" data-title="Tubos de Conducción" data-description="Soluciones para transporte de fluidos y materiales."></div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div id="dynamicCaption" class="carousel-caption-custom">
+  <h5 id="captionTitle"></h5>
+  <p id="captionDescription"></p>
+</div> 
+<div class="container"></div>
+
+<!--Seccion_Ultimos proyectos-->
+<div class="container py-5 text-center" id="nosotros">
+  <p class="text-muted">Portafolio</p>
+  <h2 class="mb-3">NOSOTROS</h2>
+  
+  <div class="divider-line"></div>
+  
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <p>
+        Cras finibus non magna sed varius. Fusce risus eros, dapibus vitae dignissim vel, consequat et dolor.
+        Proin maximus posuere felis a tincidunt. Etiam sit amet ligula eget libero suscipit semper eget ornare magna.
+        Phasellus non est ligula. Nulla auctor neque non tortor.
+      </p>
+    </div>
+  </div>
+</div>
+<!--Proyectos-->
+<div class="container py-5">
+  <div class="row text-center">
+    
+    <div class="col-6 col-md-3 mb-4">
+      <div class="circular-image">
+        <img src="/img/img_ref_fierros.webp" alt="Descripción de la imagen" class="img-fluid">
+      </div>
+      <h5 class="text-uppercase mt-3">PROYECTO1</h5>
+      <p class="text-muted small">Buildings / Construction</p>
+    </div>
+    
+    <div class="col-6 col-md-3 mb-4">
+      <div class="circular-image">
+        <img src="/img/img_ref_fierros.webp" alt="Descripción de la imagen" class="img-fluid">
+      </div>
+      <h5 class="text-uppercase mt-3">PROYECTO2</h5>
+      <p class="text-muted small">Interior Design</p>
+    </div>
+    
+    <div class="col-6 col-md-3 mb-4">
+      <div class="circular-image">
+        <img src="/img/img_ref_fierros.webp" alt="Descripción de la imagen" class="img-fluid">
+      </div>
+      <h5 class="text-uppercase mt-3">PROYECTO3</h5>
+      <p class="text-muted small">Construction</p>
+    </div>
+    
+    <div class="col-6 col-md-3 mb-4">
+      <div class="circular-image">
+        <img src="/img/img_ref_fierros.webp" alt="Descripción de la imagen" class="img-fluid">
+      </div>
+      <h5 class="text-uppercase mt-3">PROYECTO4</h5>
+      <p class="text-muted small">Architecture</p>
+    </div>
+    
+  </div>
+</div>
+<div class="content-section">
+  <div class="container text-white py-5">
+    
+    <div class="row">
+      
+      <div class="col-md-4 text-center p-4">
+        <div class="icon-circle">
+          <i class="bi bi-fire"></i>
+        </div>
+        <h5 class="text-uppercase mt-3">lorem</h5>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+      </div>
+      
+      <div class="col-md-4 text-center p-4">
+        <div class="icon-circle">
+          <i class="bi bi-fire"></i>
+        </div>
+        <h5 class="text-uppercase mt-3">lorem</h5>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi.</p>
+      </div>
+      
+      <div class="col-md-4 text-center p-4">
+        <div class="icon-circle">
+          <i class="bi bi-fire"></i>
+        </div>
+        <h5 class="text-uppercase mt-3">lorem</h5>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut.</p>
+      </div>
+
+    </div>
+
+    <div class="row mt-4">
+
+      <div class="col-md-4 text-center p-4">
+        <div class="icon-circle">
+          <i class="bi bi-fire"></i>
+        </div>
+        <h5 class="text-uppercase mt-3">lorem</h5>
+        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat.</p>
+      </div>
+      
+      <div class="col-md-4 text-center p-4">
+        <div class="icon-circle">
+          <i class="bi bi-fire"></i>
+        </div>
+        <h5 class="text-uppercase mt-3">lorem</h5>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.</p>
+      </div>
+
+      <div class="col-md-4 text-center p-4">
+        <div class="icon-circle">
+          <i class="bi bi-fire"></i>
+        </div>
+        <h5 class="text-uppercase mt-3">lorem</h5>
+        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="row g-0">
+  
+  <div class="col-md-6 d-flex align-items-center">
+    <img src="/img/img_ref_cadenas.webp" class="img-fluid w-100" alt="Construction worker">
+  </div>
+  
+  <div class="col-md-6 content-block">
+    <div class="p-5 text-center">
+      
+      <p class="text-muted">Que nos hace diferentes</p>
+      <h2 class="text-uppercase mb-4">QUE NOS HACE DIFERENTES</h2>
+      <div class="divider-line"></div>
+      
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate quam, quasi sed laborum laudantium harum voluptates eum totam eaque, omnis architecto modi sunt nostrum, veniam facilis perspiciatis ea quia minima.
+      </p>
+      
+      <div class="row mt-5 justify-content-center">
+        <div class="col-6">
+          <img src="/img/img_ref_fierros.webp" class="img-fluid" alt="Discussion">
+        </div>
+        <div class="col-6">
+          <img src="/img/img_ref_fierros.webp" class="img-fluid" alt="Teamwork">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="container-fluid g-0">
+  <div class="row g-0 text-white">
+    
+    <div class="col-md-4 p-5 feature-block-1">
+      <div class="icon">
+        <i class="bi bi-building-fill-exclamation"></i>
+      </div>
+      <h4 class="text-uppercase my-4">
+        GALVANIZADO<br>ES UNA CHISPA<br>ELECTROLITICA.
+      </h4>
+      <p>
+        Sed dapibus, mi dignissim posuere faucibus, risus turpis ultricies turpis, eu semper metus tortor vulputate erat. Phasellus finibus dictum mi, eget mollis turpis tincidunt vitae. Ut cursus, arcu feugiat laoreet finibus, orci nisi.
+      </p>
+    </div>
+    
+    <div class="col-md-4 p-5 feature-block-2">
+      <div class="icon">
+        <i class="bi bi-building-fill-exclamation"></i>
+      </div>
+      <h4 class="text-uppercase my-4">
+        UNA BUENA EMPRESA<br>REQUIERE UNA SOLIDA <br>Y ROBUSTA FAMILIA DE TRABAJADORES.
+      </h4>
+      <p>
+        Praesent porta finibus ultricies. In sollicitudin elementum malesuada. Etiam interdum accumsan hendrerit. Aenean finibus vestibulum lectus, nec feugiat sem congue non. In sit amet sodales enim. Vestibulum sollicitudin rutrum.
+      </p>
+    </div>
+    
+    <div class="col-md-4 p-5 feature-block-3">
+      <div class="icon">
+        <i class="bi bi-building-fill-exclamation"></i>
+      </div>
+      <h4 class="text-uppercase my-4">
+        PRESTAMOS ATENCION<br>A LOS DETALLES MINIMOS PARA<br>MEJORES RESULTADOS.
+      </h4>
+      <p>
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque quis ligula et lacus hendrerit tempor. Sed sit amet viverra ipsum, posuere condimentum ligula. Etiam vel rutrum nulla. Cras sed pulvinar risus, non.
+      </p>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="container text-center py-5">
+  <div class="row mb-5">
+    <div class="col-md-3 col-6 mb-4">
+      <img src="/img/icono_ajuste_perfecto.png" class="img-fluid" alt="Imagen 1">
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <img src="/img/icono_industrias mendoza.png" class="img-fluid" alt="Imagen 2">
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <img src="/img/icono_sgm.png" class="img-fluid" alt="Imagen 3">
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <img src="/img/icono_epg.png" class="img-fluid" alt="Imagen 4">
+    </div>
+  </div>
+  
+  <div class="mb-5">
+    <h2 class="text-uppercase fw-bold">HAGAMOS ALGO BUENO JUNTOS</h2>
+    <p class="text-muted">
+      Comunicate con nosotros y presentemos informacion
+    </p>
+  </div>
+  
+  <div>
+    <a href="#" class="btn btn-warning btn-lg rounded-pill px-5 text-uppercase fw-bold">
+      Ir
+    </a>
+  </div>
+
+</div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="animations_carrousel.js"></script>
