@@ -195,6 +195,6 @@ li {
         filter: brightness(100%) saturate(1.2);
     }
     .navbar{
-        top: 0px;
+        top: 10px;
     }
 }
