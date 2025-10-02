@@ -187,3 +187,8 @@ li {
     height: auto;
     filter: brightness(0) invert(1) sepia(1) saturate(10000%) hue-rotate(30deg);
 }
+
+
+@media (min-width:576px){
+    
+}
