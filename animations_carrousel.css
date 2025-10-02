@@ -67,7 +67,7 @@
 
 @media (max-width: 576px) {
     .carousel-caption-custom{
-    top: 20%;
+    top: 50%;
     left: 40%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -77,4 +77,8 @@
     width: 70%;
     max-width: 200px;
 }
+.navbar_movil{
+    display: disabled;
 }
+}
+
