@@ -189,6 +189,12 @@ li {
 }
 
 
-@media (min-width:576px){
-    
+@media (max-width:576px){
+    .icono_empresa{
+        max-height: 5vh;
+        filter: brightness(100%) saturate(1.2);
+    }
+    .navbar{
+        top: 0px;
+    }
 }
