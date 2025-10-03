@@ -195,6 +195,9 @@ li {
         filter: brightness(100%) saturate(1.2);
     }
     .navbar{
-        top: 10px;
+        top:0px;
+    }
+    .navbar-collapse{
+        text-align: center;
     }
 }
